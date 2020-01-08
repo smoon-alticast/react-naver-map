@@ -71,7 +71,9 @@ class NaverMap extends React.Component {
   }
 
   initMap = () => {
-    const mapOpts = {}
+    const mapOpts = {
+      useStyleMap: true,
+    }
     if (this.props.initialPosition) {
       mapOpts.center = this.props.initialPosition
     }
